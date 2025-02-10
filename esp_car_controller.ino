@@ -459,7 +459,7 @@ void loop() {
         speedScale = (uint8_t)lerp(0.0, 100.0, (float)driveStickY / (float)JOYSTICK_DEADZONE_LOWER);
       }
       else if (driveStickY >= JOYSTICK_DEADZONE_UPPER) {
-        speedScale = (uint8_t)lerp(100.0, 200.0, ((float)driveStickY - (float)JOYSTICK_DEADZONE_UPPER) / (4905.0 - (float)JOYSTICK_DEADZONE_UPPER));
+        speedScale = (uint8_t)lerp(100.0, 200.0, ((float)driveStickY - (float)JOYSTICK_DEADZONE_UPPER) / (4095.0 - (float)JOYSTICK_DEADZONE_UPPER));
       }
     }
 
@@ -468,7 +468,7 @@ void loop() {
         turnScale = (uint8_t)lerp(0.0, 100.0, (float)turnStickX / (float)JOYSTICK_DEADZONE_LOWER);
       }
       else if (turnStickX >= JOYSTICK_DEADZONE_UPPER) {
-        turnScale = (uint8_t)lerp(100.0, 200.0, ((float)turnStickX - (float)JOYSTICK_DEADZONE_UPPER) / (4905.0 - (float)JOYSTICK_DEADZONE_UPPER));
+        turnScale = (uint8_t)lerp(100.0, 200.0, ((float)turnStickX - (float)JOYSTICK_DEADZONE_UPPER) / (4095.0 - (float)JOYSTICK_DEADZONE_UPPER));
       }
     }
 
