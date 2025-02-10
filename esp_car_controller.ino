@@ -38,7 +38,7 @@ const uint8_t DPAD_RIGHT_PIN = 33;
 const uint8_t DPAD_DOWN_PIN = 14;
 const uint8_t DPAD_LEFT_PIN = 13;
 
-const uint16_t JOYSTICK_DEADZONE_UPPER = 2200;
+const uint16_t JOYSTICK_DEADZONE_UPPER = 2100;
 const uint16_t JOYSTICK_DEADZONE_LOWER = 1500;
 
 /////////////////////////////////////////////////////////// OBJECTS
